@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>przelicznik jednostek</title>
+        <script type="text/javascript">
+          function celdoFahr() {
+              var cel
+              cel =document.getElementById('stopnieCel').value
+              fahr= 32+9/5 * cel
+              document.getElementById('stopnieFahr').value=fahr
+          }
+          function fahrdoCel() {     
+              var fahr
+              fahr =document.getElementById('stopnieFahr').value
+              var cel
+              cel = 5/9 * (fahr- 32)
+              document.getElementById('stopnieCel').value = cel
+
+          }
+        </script>
+	</head>
+	<body> 
+		
+		<h1>Przelicznik jednostek</h1>
+        Stopnie Celsjusza:
+         <input type="text" id="stopnieCel" onkeyup="celdoFahr()"/>
+        <br>
+        <br>
+        Stopnie Fahrenheita:
+		  <input type="text" id="stopnieFahr" onkeyup="fahrdoCel()"/>
+
+       
+	</body>
+</html>

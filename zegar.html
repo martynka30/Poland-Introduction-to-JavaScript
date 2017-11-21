@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>przelicznik jednostek</title>
+      
+	</head>
+	<body onload="zegar()"> 
+		<cener> <font size="7" font color="red">Zegar</font></cener>
+        <form name="a">
+            <input type="text" name="b"/>
+        
+            
+              <script>
+            function zegar (){
+                czas = new Date()
+                godz = czas.getHours()
+                min =czas. getMinutes()
+                sek = czas.getSeconds()
+                
+                if (min<10)
+                  {
+                    min = "0" +  min
+                  }
+            if (sek<10)
+                {
+                 sek = "0" +  sek   
+                }
+                document.a.b.value= godz + " : " + min + " : "  + sek
+                setTimeout("zegar()", 900)
+            }      
+        </script>                       
+        
+        
+        </form>
+	
+      
+         
+	</body>
+</html>

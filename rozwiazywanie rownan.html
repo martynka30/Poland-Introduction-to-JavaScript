@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>przelicznik jednostek</title>
+        <script type="text/javascript">
+           function rozwiazanie(){
+               var a= document.getElementById('a').value
+               var b =document.getElementById('b').value
+               var c =document.getElementById('c').value
+               var delta
+               var x1
+               var x2
+               delta = Math.pow(b, 2)-(4*a*c)
+            if (delta<0) {
+                 alert("Delta ujemna-> brak rozwiazania")
+              }
+              else if (delta==0) {
+                  delta = -b/(2*a)
+                  alert ("Delta rowna zero-> jedno roziazanie:" +x1)
+                  
+              } 
+               else if (delta>0){
+                   delta =Math.sqrt(delta)
+                   x1 = -b- delta)/(2*a)
+                   x2 =(-b+ delta)/2*a)
+                   alert ("Delta dodatnia -> dwa rozwiazania: x1= " +x1 + "  x2 ="  + x2)
+                   
+               }
+               
+            }
+            function czyszczenie(){
+                document.getElementById('a').value= 0
+                document.getElementById('b').value= 0
+                document.getElementById('c').value= 0
+            }
+        </script>
+	</head>
+	<body> 
+		
+		<h1>Rozwiazywanie ronan</h1>
+      
+         <input type="text" value="0" size="3" id="a"/>
+           x^2+
+         <input type="text" value="0" size="3" id="b"/>
+           x +
+         <input type="text" value="0" size="3" id="c"/>
+           =0
+        
+        <br>
+    
+		  <input type="button" vaLue="Rozwiaz" oncLick="rozwiazanie()"/>
+          <input type="button" vaLue="Wyczysc" oncLick="czyszczenie()"/>
+       
+	</body>
+</html>

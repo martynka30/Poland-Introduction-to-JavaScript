@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>jawa script</title>
+        <script type="text/javascript">
+          function powcisnieciu() {
+              Document.getElementById("tytul").innerHTML=document.getElementById("mojepole").value
+              
+              
+          }
+            
+            
+        </script>
+	</head>
+	<body onLoad="alert('Witam wszystkich')"> 
+		
+		<h1 id="tytul">Witam wszystkich</h1>
+         <input type="text" id="mojepole" onkeyup="powcisnieciu()"/>
+        <br>
+		<input type="button"  value="nacisnij" onlick="powcisnieciu()"/>
+       
+	</body>
+</html>
