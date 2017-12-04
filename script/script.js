@@ -10,10 +10,10 @@ function celdoFahr() {
 function fahrdoCel();
 {     
     var fahr;
-    fahr =document.getElementById('stopnieFahr').value
-    var cel
+    fahr =document.getElementById('stopnieFahr').value;
+    var cel;
     cel = 5/9 * (fahr- 32)
-    document.getElementById('stopnieCel').value = cel
+    document.getElementById('stopnieCel').value = cel;
 
 }
 
@@ -32,8 +32,8 @@ function rozwiazanie(){
         alert("Delta ujemna-> brak rozwiazania")
     }
     else if (delta==0) {
-        delta = -b/(2*a)
-        alert ("Delta rowna zero-> jedno roziazanie:" +x1)
+        delta = -b/(2*a);
+        alert ("Delta rowna zero-> jedno roziazanie:" +x1);
 
     } 
     else if (delta>0){
