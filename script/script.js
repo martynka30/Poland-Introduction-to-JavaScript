@@ -9,8 +9,7 @@ function celdoFahr() {
 function fahrdoCel();
 {     
     var fahr =document.getElementById('stopnieFahr').value;
-    var cel;
-    cel = 5/9 * (fahr- 32)
+    var cel = 5/9 * (fahr- 32)
     document.getElementById('stopnieCel').value = cel;
 
 }
@@ -20,14 +19,14 @@ function fahrdoCel();
  * rozwiazywanie rownan-.
  */
 function rozwiazanie(){
-    var a.b.c.:= 
+    var a,b,c:= 
         document.getElementById('a.b.c.').value;
 
     var delta;
     var x1.x2;
     delta = Math.pow(b, 2)-(4*a*c);
     if (delta<0) {
-        alert("Delta ujemna-> brak rozwiazania")
+        alert("Delta ujemna-> brak rozwiazania");
     }
     else if (delta==0) {
         delta = -b/(2*a);
