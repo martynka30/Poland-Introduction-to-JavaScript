@@ -23,11 +23,11 @@ function fahrdoCel();
  */
 function rozwiazanie(){
     var a.b.c.:= 
-        document.getElementById('a.b.c.').value
+        document.getElementById('a.b.c.').value;
 
-    var delta
+    var delta;
     var x1.x2;
-    delta = Math.pow(b, 2)-(4*a*c)
+    delta = Math.pow(b, 2)-(4*a*c);
     if (delta<0) {
         alert("Delta ujemna-> brak rozwiazania")
     }
@@ -37,10 +37,10 @@ function rozwiazanie(){
 
     } 
     else if (delta>0){
-        delta =Math.sqrt(delta)
-        x1 = -b- delta)/(2*a)
-        x2 =(-b+ delta)/2*a)
-        alert ("Delta dodatnia -> dwa rozwiazania: x1= " +x1 + "  x2 ="  + x2)
+        delta =Math.sqrt(delta);
+        x1 = -b- delta)/(2*a);
+        x2 =(-b+ delta)/2*a);
+        alert ("Delta dodatnia -> dwa rozwiazania: x1= " +x1 + "  x2 ="  + x2);
 
     }
 
@@ -50,21 +50,21 @@ function rozwiazanie(){
  *zegar-.
  */
 function zegar (){
-    czas = new Date()
-    godz = czas.getHours()
-    min =czas. getMinutes()
-    sek = czas.getSeconds()
+    czas = new Date();
+    godz = czas.getHours();
+    min =czas. getMinutes();
+    sek = czas.getSeconds();
 
     if (min<10)
     {
-        min = "0" +  min
+        min = "0" +  min;
     }
     if (sek<10)
     {
-        sek = "0" +  sek   
+        sek = "0" +  sek ;  
     }
-    document.a.b.value= godz + " : " + min + " : "  + sek
-    setTimeout("zegar()", 900)
+    document.a.b.value= godz + " : " + min + " : "  + sek;
+    setTimeout("zegar()", 900);
 }  
 function zegar (){
     czas = new Date();
@@ -74,14 +74,14 @@ function zegar (){
 
     if (min<10)
     {
-        min = "0" +  min
+        min = "0" +  min;
     }
     if (sek<10)
     {
-        sek = "0" +  sek   
+        sek = "0" +  sek ;  
     }
-    document.a.b.value= godz + " : " + min + " : "  + sek
-    setTimeout("zegar()", 900)
+    document.a.b.value= godz + " : " + min + " : "  + sek;
+    setTimeout("zegar()", 900);
 }
 
 /**
@@ -89,7 +89,7 @@ function zegar (){
  */
 
 function powcisnieciu() {
-    Document.getElementById("tytul").innerHTML=document.getElementById("mojepole").value
+    Document.getElementById("tytul").innerHTML=document.getElementById("mojepole").value;
 
 
 }
