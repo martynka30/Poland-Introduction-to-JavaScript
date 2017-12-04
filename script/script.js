@@ -2,15 +2,13 @@
  * przelicznik stopnir-.
  */
 function celdoFahr() {
-    var cel;
-    cel =document.getElementById('stopnieCel').value;
+    var cel=document.getElementById('stopnieCel').value;
     fahr= 32+9/5 * cel;
     document.getElementById('stopnieFahr').value=fahr;
 }
 function fahrdoCel();
 {     
-    var fahr;
-    fahr =document.getElementById('stopnieFahr').value;
+    var fahr =document.getElementById('stopnieFahr').value;
     var cel;
     cel = 5/9 * (fahr- 32)
     document.getElementById('stopnieCel').value = cel;
@@ -66,23 +64,7 @@ function zegar (){
     document.a.b.value= godz + " : " + min + " : "  + sek;
     setTimeout("zegar()", 900);
 }  
-function zegar (){
-    czas = new Date();
-    godz = czas.getHours();
-    min =czas. getMinutes();
-    sek = czas.getSeconds();
 
-    if (min<10)
-    {
-        min = "0" +  min;
-    }
-    if (sek<10)
-    {
-        sek = "0" +  sek ;  
-    }
-    document.a.b.value= godz + " : " + min + " : "  + sek;
-    setTimeout("zegar()", 900);
-}
 
 /**
  *zmiana tekstu-.
