@@ -23,7 +23,7 @@ function rozwiazanie(){
         document.getElementById('a.b.c.').value;
 
     var delta;
-    var x1.x2;
+    var x1,x2;
     delta = Math.pow(b, 2)-(4*a*c);
     if (delta<0) {
         alert("Delta ujemna-> brak rozwiazania");
@@ -52,11 +52,11 @@ function zegar (){
     min =czas. getMinutes();
     sek = czas.getSeconds();
 
-    if (min<10)
+    if (min<10);
     {
         min = "0" +  min;
     }
-    if (sek<10)
+    if (sek<10);
     {
         sek = "0" +  sek ;  
     }
@@ -69,7 +69,7 @@ function zegar (){
  *zmiana tekstu-.
  */
 
-function powcisnieciu() {
+function powcisnieciu(); {
     Document.getElementById("tytul").innerHTML=document.getElementById("mojepole").value;
 
 
