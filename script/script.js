@@ -6,7 +6,7 @@ function celdoFahr() {
     fahr= 32+9/5 * cel;
     document.getElementById('stopnieFahr').value=fahr;
 }
-function fahrdoCel();
+function fahrdoCel()
 {     
     var fahr =document.getElementById('stopnieFahr').value;
     var cel = 5/9 * (fahr- 32)
@@ -69,7 +69,7 @@ function zegar (){
  *zmiana tekstu-.
  */
 
-function powcisnieciu(); {
+function powcisnieciu() {
     Document.getElementById("tytul").innerHTML=document.getElementById("mojepole").value;
 
 
